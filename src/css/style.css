@@ -13,7 +13,13 @@ body {
     font-family: "JF Flat Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 14px;
     color: #555555;
-     line-height: 1.429;  /* نسبة ارتفاع الخط تقريبا 14px  */
+    line-height: 1.429;  /* نسبة ارتفاع الخط تقريبا 14px  */
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -997,6 +1003,47 @@ input[type=email], input[type="number"] {
     }
 
 
+
+    
+    /******************************************************************
+    *************************************
+    contact.html
+    *************************************
+    *******************************************************************/
+
+    #map {
+        padding: 0;
+    }
+
+    #contact-options h4 {
+        font-size: 18px;
+        padding-bottom: 12px;
+    }
+
+    .heading-with-border-bottom {
+        margin-bottom: 20px;
+    }
+
+    #contact-info {
+        margin-bottom: 25px;
+    }
+
+    #contact-info .fa-lg {
+        color: #f3af41;
+        font-size: 18px;
+        margin: 10px 10px 7px 10px;
+        width: 25px;
+        text-align: center;
+    }
+
+    #contact-options textarea {
+        height: 128px !important;
+    }
+
+    #contact-options {
+        margin-bottom: 25px;
+    }
+
     /******************************************************************
     **************************************
     MEDIA QUERY
@@ -1086,7 +1133,7 @@ input[type=email], input[type="number"] {
         /* المنتجات الاكثر مبيعا */
 
     .overlay {
-        display: none;
+        display: none !important;
     }    
 
     .custom-thumbmail .add-to-cart-btn {
@@ -1115,6 +1162,12 @@ input[type=email], input[type="number"] {
         height: 20px !important;
         width: 20px !important;
         top: -10px !important;
+    }
+
+    /* contact page */
+
+    #form-subscription {
+        margin-bottom: 40px;
     }
 
 
