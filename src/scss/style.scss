@@ -1,7 +1,12 @@
-@import './variables';
-@import './_custom-table';
+@import "./variables";
+@import "./_custom-table";
+@import "./_mixins";
+@import "./_slider";
+@import "./_sale";
 
-.custom-form-control, .custom-btn {  /* تنسيقات زر اختر فئة في الناف بار */
+.custom-form-control,
+.custom-btn {
+    /* تنسيقات زر اختر فئة في الناف بار */
     border: 1px solid #ebebeb;
     box-shadow: none;
     border-radius: 2px;
@@ -11,7 +16,8 @@
     color: #868686;
 }
 
-.custom-navbar .container .custom-form-control:focus { /* تغيير لون الاطار الازرق في صندوق البحث غند التركيز عليه */
+.custom-navbar .container .custom-form-control:focus {
+    /* تغيير لون الاطار الازرق في صندوق البحث غند التركيز عليه */
     border-color: $btn-danger-color-dark;
     box-shadow: 0 0 2px 0 $btn-danger-color-dark;
 }
@@ -23,50 +29,25 @@
 }
 
 .custom-btn-primary {
-    color: $brand-primary;
-    border-color: $brand-primary;
-    background-color: transparent;
-}
-
-.custom-btn-primary:hover,
-.custom-btn-primary:active,
-.custom-btn-primary:focus,
-.custom-btn-primary:active:focus,
-.custom-btn-primary:active:hover {
-    color: $btn-primary-color-dark;
-    border-color: $btn-primary-color-dark;
-    background-color: transparent;
+    @include button-style($brand-primary);
 }
 
 .custom-btn-primary2 {
     color: #000;
     background-color: $brand-primary;
     border-color: $brand-primary;
-}
 
-.custom-btn-primary2:hover,
-.custom-btn-primary2:active,
-.custom-btn-primary2:focus,
-.custom-btn-primary2:active:focus,
-.custom-btn-primary2:active:hover {
-    border-color: $btn-primary-color-dark;
-    background-color: $btn-primary-color-dark;
-    color: #000;
+    &:hover,
+    &:active,
+    &:focus,
+    &:active:focus,
+    &:active:hover {
+        border-color: $btn-primary-color-dark;
+        background-color: $btn-primary-color-dark;
+        color: #000;
+    }
 }
 
 .custom-btn-danger {
-    color: $brand-danger;
-    border-color: $brand-danger;
-    background-color: transparent;
-    border-radius: 3px;
-}
-
-.custom-btn-danger:hover, 
-.custom-btn-danger:active, 
-.custom-btn-danger:focus, 
-.custom-btn-danger:active:focus, 
-.custom-btn-danger:active:hover {
-    color: $btn-danger-color-dark;
-    border-color: $btn-danger-color-dark;
-    background-color: transparent;
+    @include button-style($brand-danger);
 }

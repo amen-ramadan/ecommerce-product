@@ -217,31 +217,7 @@ body {
 }
 
     /* تنسيقات جملة الخصم في الكاروسيل */
-
-
-.sale {
-    background-color: #53ccd7;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-}
-
-.sale.large {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    left: -15px;
-    top: -15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(-25deg);
-    font-size: 130%;
-    padding: 35px;
-    line-height: 90%;
-    flex-direction: column;
-}
-
+    
 #carousel-featured .product-details .sale.large span {
     font-size: 14px;
 }
@@ -865,33 +841,6 @@ input[type=email], input[type="number"] {
         font-weight: bold;
     }
 
-
-
-    /* تنسيق البحث حسب السعر */
-
-    .ui-slider {
-        margin: 25px 0px 15px;
-        height: 2px;
-    }
-
-    /* المقبضان */
-
-    .ui-slider .ui-slider-handle {
-        background-color: #f8ad47 !important;
-        border: none !important;
-        border-radius: 50%;
-        height: 12px !important;
-        width: 12px !important;
-        top: -6px !important;
-    }
-
-    /* المجال */
-
-    .ui-slider .ui-slider-range {
-        border: 1px solid #f8ad47 !important;
-        top: -1px !important;
-    }
-
     .ui-slider-horizontal {
         height: 0 !important;
     }
@@ -1085,15 +1034,6 @@ input[type=email], input[type="number"] {
         margin: 10px;
         line-height: 40px;
         font-size: 20px;
-    }
-
-
-    /* search.html */
-
-    .ui-slider .ui-slider-handle {
-        height: 20px !important;
-        width: 20px !important;
-        top: -10px !important;
     }
 
     /* contact page */
