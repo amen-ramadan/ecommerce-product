@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: "JF Flat Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "JF Flat Regular", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
     font-size: 14px;
     color: #555555;
     line-height: 1.429;  /* نسبة ارتفاع الخط تقريبا 14px  */

@@ -3,6 +3,7 @@
 @import "./_mixins";
 @import "./_slider";
 @import "./_sale";
+@import "./custom.scss";
 
 .custom-form-control,
 .custom-btn {
@@ -17,7 +18,7 @@
 }
 
 .custom-navbar .container .custom-form-control:focus {
-    /* تغيير لون الاطار الازرق في صندوق البحث غند التركيز عليه */
+    /* تغيير لون الاطار الازرق في صندوق البحث عند التركيز عليه */
     border-color: $btn-danger-color-dark;
     box-shadow: 0 0 2px 0 $btn-danger-color-dark;
 }
